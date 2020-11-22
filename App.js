@@ -10,7 +10,7 @@ export default function App() {
 
   const handleGoalAddition = (task) => {
     if (task != "") {
-      setTaskList([...taskList, { id: `${taskList.length} + 1`, title: task }]);
+      setTaskList([...taskList, { id: `${taskList.length + 1}`, title: task }]);
     }
   };
 
