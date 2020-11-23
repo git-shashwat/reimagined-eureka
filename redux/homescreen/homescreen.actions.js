@@ -5,6 +5,7 @@ export const setNumber = (number) => ({
   payload: number,
 });
 
-export const setIsConfirmed = () => ({
+export const setIsConfirmed = (isConfirmed) => ({
   type: homescreenTypes.SET_IS_CONFIRMED,
+  payload: isConfirmed,
 });

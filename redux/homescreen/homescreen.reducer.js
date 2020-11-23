@@ -1,6 +1,6 @@
 import homescreenTypes from "./homescreen.types";
 const INITIAL_STATE = {
-  number: "0",
+  number: "1",
   isConfirmed: false,
 };
 
@@ -15,7 +15,7 @@ export default (state = INITIAL_STATE, action) => {
     case homescreenTypes.SET_IS_CONFIRMED:
       return {
         ...state,
-        isConfirmed: !state.isConfirmed,
+        isConfirmed: action.payload,
       };
 
     default:

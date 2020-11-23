@@ -11,7 +11,7 @@ import {
 const InputConfirmation = ({ number, setNumber, setIsConfirmed }) => {
   return (
     <View>
-      <Button color="red" title="Reset" onPress={() => setNumber("0")} />
+      <Button color="red" title="Reset" onPress={() => setNumber("1")} />
       <Button
         disabled={!number}
         title="Confirm"
@@ -27,7 +27,7 @@ const mapStateToProps = createStructuredSelector({
 
 const mapDispatchToProps = (dispatch) => ({
   setNumber: (number) => dispatch(setNumber(number)),
-  setIsConfirmed: () => dispatch(setIsConfirmed()),
+  setIsConfirmed: () => dispatch(setIsConfirmed(true)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(InputConfirmation);

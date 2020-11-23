@@ -1,12 +1,15 @@
 import React from "react";
 import { View, Text } from "react-native";
+import GuessMaker from "../../components/guess-maker/guess-maker.component.jsx";
+import GuessedNumber from "../../components/guessed-number/guessed-number.component.jsx";
 
 import styles from "./game.styles.js";
 
-const Game = () => {
+const Game = ({ navigation }) => {
   return (
     <View>
-      <Text>Game Screen</Text>
+      <GuessedNumber />
+      <GuessMaker navigation={navigation} />
     </View>
   );
 };
