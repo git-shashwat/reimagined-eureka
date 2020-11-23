@@ -6,6 +6,8 @@ import { selectIsConfirmed } from "../../redux/homescreen/homescreen.selectors";
 import InputConfirmation from "../input-confirmation/input-confirmation.component";
 import NumberInput from "../number-input/number-input.component";
 
+import styles from "./input-container.styles";
+
 const InputContainer = ({ isConfirmed }) => {
   return (
     <View>

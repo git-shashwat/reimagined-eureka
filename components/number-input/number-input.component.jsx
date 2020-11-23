@@ -8,6 +8,7 @@ import {
   selectIsConfirmed,
 } from "../../redux/homescreen/homescreen.selectors";
 import { setNumber } from "../../redux/homescreen/homescreen.actions";
+import styles from "./number-input.styles";
 
 const NumberInput = ({ number, isConfirmed, setNumber }) => {
   const handleNumberChange = (text) => {
@@ -16,13 +17,14 @@ const NumberInput = ({ number, isConfirmed, setNumber }) => {
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <TextInput
         keyboardType="number-pad"
-        placeholder="Enter number here..."
+        placeholder="69"
         editable={!isConfirmed}
         value={number}
         onChangeText={(text) => handleNumberChange(text)}
+        style={styles.input}
       />
     </View>
   );

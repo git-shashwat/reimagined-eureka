@@ -7,10 +7,11 @@ import {
   setIsConfirmed,
   setNumber,
 } from "../../redux/homescreen/homescreen.actions";
+import styles from "./input-confirmation.styles";
 
 const InputConfirmation = ({ number, setNumber, setIsConfirmed }) => {
   return (
-    <View>
+    <View style={styles.container}>
       <Button color="red" title="Reset" onPress={() => setNumber("1")} />
       <Button
         disabled={!number}

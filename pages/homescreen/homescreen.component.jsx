@@ -10,12 +10,16 @@ import styles from "./homescreen.styles";
 const HomeScreen = ({ navigation, isConfirmed }) => {
   return (
     <View style={styles.homescreen}>
-      <InputContainer />
       {isConfirmed ? (
         <StartBtn navigation={navigation} />
       ) : (
-        <Text>Enter a number to start the game!</Text>
+        <View style={styles.message}>
+          <Text style={{ fontSize: 24 }}>
+            Enter a number to start the game!
+          </Text>
+        </View>
       )}
+      <InputContainer />
     </View>
   );
 };
