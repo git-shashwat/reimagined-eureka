@@ -2,6 +2,7 @@ import React from "react";
 import { View, Button } from "react-native";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
+import { ColoredRaisedButton } from "react-native-material-kit";
 import { selectNumber } from "../../redux/homescreen/homescreen.selectors";
 import {
   setIsConfirmed,

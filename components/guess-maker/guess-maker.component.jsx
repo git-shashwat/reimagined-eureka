@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import { selectNumber } from "../../redux/homescreen/homescreen.selectors";
 import { selectGuessedNumber } from "../../redux/game/game.selectors";
 import { setGuessedNumber } from "../../redux/game/game.actions";
+import styles from "./guess-maker.styles";
 // import './guess-maker.styles';
 
 const GuessMaker = ({
@@ -47,7 +48,7 @@ const GuessMaker = ({
   }, [guessedNumber]);
 
   return (
-    <View>
+    <View style={styles.container}>
       <Button color="orange" title="LOWER" onPress={moveLower} />
       <Button color="red" title="HIGHER" onPress={moveHigher} />
     </View>

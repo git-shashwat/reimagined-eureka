@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   },
   input: {
     fontSize: 48,
+    color: "white",
     textAlign: "center",
     paddingVertical: 10,
   },

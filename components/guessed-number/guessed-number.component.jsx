@@ -4,12 +4,12 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectGuessedNumber } from "../../redux/game/game.selectors";
 
-// import styles from "./guessed-number.styles.js";
+import styles from "./guessed-number.styles.js";
 
 const GuessedNumber = ({ guessedNumber }) => {
   return (
-    <View>
-      <Text>{guessedNumber}</Text>
+    <View style={styles.container}>
+      <Text style={{ fontSize: 64 }}>{guessedNumber}</Text>
     </View>
   );
 };
