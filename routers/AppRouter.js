@@ -24,7 +24,7 @@ export default () => {
         <Stack.Screen
           name="Summary"
           component={Summary}
-          options={{ title: "Summary", headerLeft: null }}
+          options={{ title: "Game Over", headerLeft: null }}
         />
       </Stack.Navigator>
     </NavigationContainer>

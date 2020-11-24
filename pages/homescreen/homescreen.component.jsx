@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text } from "react-native";
 import LottieView from "lottie-react-native";
 import { connect } from "react-redux";
@@ -28,6 +28,7 @@ const HomeScreen = ({ navigation, isConfirmed }) => {
           </Text>
         </View>
       )}
+      {isConfirmed && <Text>You entered</Text>}
       <InputContainer />
       {isConfirmed && <StartBtn navigation={navigation} />}
     </View>

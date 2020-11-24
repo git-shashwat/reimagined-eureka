@@ -13,11 +13,18 @@ import styles from "./input-confirmation.styles";
 const InputConfirmation = ({ number, setNumber, setIsConfirmed }) => {
   return (
     <View style={styles.container}>
-      <Button color="red" title="Reset" onPress={() => setNumber("1")} />
+      <Button color="#FF2511" title="Reset" onPress={() => setNumber("1")} />
       <Button
         disabled={!number}
         title="Confirm"
-        onPress={() => setIsConfirmed()}
+        color="#189AB4"
+        onPress={() => {
+          if (number < 1 || number > 100) {
+            alert("Enter a Number b/w 1 & 100");
+            return;
+          }
+          setIsConfirmed();
+        }}
       />
     </View>
   );

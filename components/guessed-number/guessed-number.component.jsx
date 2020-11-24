@@ -9,7 +9,7 @@ import styles from "./guessed-number.styles.js";
 const GuessedNumber = ({ guessedNumber }) => {
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 64 }}>{guessedNumber}</Text>
+      <Text style={{ fontSize: 92 }}>{guessedNumber}</Text>
     </View>
   );
 };

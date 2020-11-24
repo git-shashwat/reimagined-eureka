@@ -6,3 +6,8 @@ export const selectGuessedNumber = createSelector(
   [selectGame],
   (game) => game.guessedNumber
 );
+
+export const selectGuessCount = createSelector(
+  [selectGame],
+  (game) => game.guessCount
+);
