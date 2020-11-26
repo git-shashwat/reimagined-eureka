@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "RN First App",
-    "slug": "rn-first-app",
+    "name": "Reimagined Eureka",
+    "slug": "reimagined-eureka",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Guess the number game.",
+    "githubUrl": "https://github.com/git-shashwat/reimagined-eureka"
   }
 }
